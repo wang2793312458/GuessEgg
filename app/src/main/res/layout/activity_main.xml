@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/background"
+    android:id="@+id/tableLayout1"
+    tools:context="com.feicui.guessegg.MainActivity">
+<TableRow
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:layout_weight="2"
+    android:id="@+id/tableRow1">
+    <TextView
+        android:id="@+id/textView1"
+        android:padding="10px"
+        android:layout_gravity="center"
+        android:textColor="#010D18"
+        android:textSize="35px"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="猜猜鸡蛋在哪"/>
+</TableRow>
+<TableRow
+    android:id="@+id/tableRow2"
+    android:layout_weight="1"
+    android:layout_gravity="center"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:id="@+id/imageView3"
+            android:paddingLeft="30dp"
+            android:layout_width="115dp"
+            android:layout_height="115dp"
+            android:src="@mipmap/shoe_default"/>
+        <ImageView
+            android:id="@+id/imageView2"
+            android:paddingLeft="30px"
+            android:layout_width="105dp"
+            android:layout_height="105dp"
+            android:src="@mipmap/shoe_default" />
+
+        <ImageView
+            android:id="@+id/imageView1"
+            android:layout_width="105dp"
+            android:layout_height="105dp"
+            android:paddingLeft="30px"
+            android:src="@mipmap/shoe_default" />
+    </LinearLayout>
+
+</TableRow>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_weight="1"
+        android:gravity="center_horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" >
+
+        <Button
+            android:id="@+id/button1"
+            android:textColor="#000"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="再来一次" />
+
+    </LinearLayout>
+
+
+</TableLayout>
